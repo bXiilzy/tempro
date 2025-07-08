@@ -7,16 +7,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - SB Admin</title>
+        <title>tempro</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
         
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                background-color: #f7fbff;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .custom-navbar-bg {
+                background: linear-gradient(90deg,rgb(119, 178, 237) 0%, #6ec1e4 100%) !important;
+            }
+            .custom-sidenav-bg {
+                background: linear-gradient(135deg, #a7bac2 0%, #7c98af 100%) !important;
+            }
+            .navbar-brand {
+                font-weight: 700;
+                font-size: 1.5rem;
+                color: #fff !important;
+            }
+            .nav-link {
+                color: #18191a !important;
+                font-weight: 500;
+                margin: 0 8px;
+                padding: 8px 12px !important;
+            }
+            .nav-link:hover, .nav-link.active {
+                background-color: rgba(0,0,0,0.07) !important;
+                color: #18191a !important;
+            }
+            .sb-sidenav-footer {
+                background: rgba(255,255,255,0.08);
+                color: #fff !important;
+            }
+            .sb-sidenav-menu-heading, .sb-sidenav .nav-link, .sb-sidenav-footer {
+                color: #18191a !important;
+            }
+            .btn-primary, .btn-success {
+                background: linear-gradient(90deg, #1976d2 0%, #6ec1e4 100%) !important;
+                border: none;
+            }
+            .btn-primary:hover, .btn-success:hover {
+                background: linear-gradient(90deg, #6ec1e4 0%, #1976d2 100%) !important;
+            }
+            footer.bg-light {
+                background:rgb(227, 233, 248) !important;
+            }
+            .sb-nav-link-icon {
+                color: #18191a !important;
+                font-size: 1.3rem;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+            .sidenav-link-text {
+                color: #18191a;
+                font-size: 1.08rem;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                vertical-align: middle;
+                text-shadow: none;
+            }
+        </style>
     </head>
     <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark custom-navbar-bg">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand ps-3" href="index.html">bxilzyytempro</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -41,22 +99,22 @@
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark bg-success" id="sidenavAccordion">
+                <nav class="sb-sidenav accordion sb-sidenav-dark custom-sidenav-bg" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                            
-                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <div class="sb-sidenav-menu-heading"></div>
                             <a class="nav-link" href="/">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                หน้าแรก
+                                <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+                                <span class="sidenav-link-text">หน้าแรก</span>
                             </a>
                             <a class="nav-link" href="/about">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                เกี่ยวกับเรา
+                                <div class="sb-nav-link-icon"><i class="fas fa-info-circle"></i></div>
+                                <span class="sidenav-link-text">เกี่ยวกับเรา</span>
                             </a>
                             <a class="nav-link" href="/contact">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                ติดต่อเรา
+                                <div class="sb-nav-link-icon"><i class="fas fa-envelope"></i></div>
+                                <span class="sidenav-link-text">ติดต่อเรา</span>
                             </a>
                             <!-- <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
