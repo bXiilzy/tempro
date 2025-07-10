@@ -1,7 +1,166 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section>
-    <h1 style="color: rgb(93, 45, 128);">About</h1>
+<section class="about-section py-5">
+  <div class="container">
+    <h1 class="about-main-title text-center mb-5">ABOUT US</h1>
+    <div class="row justify-content-center align-items-start g-5 position-relative">
+      <div class="about-divider d-none d-lg-block"></div>
+      <!-- เกี่ยวกับเว็บไซต์ -->
+      <div class="col-lg-6 d-flex flex-column align-items-center mb-4 mb-lg-0">
+        <div class="about-avatar bg-white shadow" style="margin-top:-48px; z-index:2; overflow:hidden;">
+          <img src="https://www.central.co.th/e-shopping/wp-content/uploads/2017/09/%E0%B9%80%E0%B8%97%E0%B8%84%E0%B8%99%E0%B8%B4%E0%B8%84%E0%B9%80%E0%B8%94%E0%B9%87%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%E0%B9%81%E0%B8%9A%E0%B8%94%E0%B8%A1%E0%B8%B4%E0%B8%99%E0%B8%95%E0%B8%B1%E0%B8%99_1.jpg" alt="store avatar" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="about-detail about-card-gradient-blue p-4 rounded-4 shadow-lg w-100 mt-0" style="margin-top:-36px; min-height:340px; color: #222; display: flex; flex-direction: column; justify-content: flex-start;">
+          <h2 class="about-name mb-1 text-center">เกี่ยวกับเว็บไซต์</h2>
+          <p class="about-title mb-3 text-center">แพลตฟอร์มซื้อ-ขายไม้แบดมินตันและอุปกรณ์สำหรับคนรักกีฬา</p>
+          <h4 class="mb-3 fw-bold text-center" style="color:#444;">จุดเด่นของเว็บไซต์</h4>
+          <ul class="about-list" style="flex:1; color:#222; background:rgba(0, 48, 110, 0.7); border-radius:12px; padding:12px 16px;">
+            <li><i class="fas fa-th-large me-2"></i> <span>สินค้าหลากหลาย: รวมไม้แบดมินตันจากแบรนด์ดัง เช่น Yonex, Li-Ning, Victor และอื่น ๆ</span></li>
+            <li><i class="fas fa-bolt me-2"></i> <span>ระบบลงขายง่าย: ผู้ใช้สามารถลงขายไม้แบดและอุปกรณ์ได้ทันที</span></li>
+            <li><i class="fas fa-search me-2"></i> <span>ค้นหาสะดวก: ฟีเจอร์ค้นหาสินค้าและกรองตามแบรนด์/ราคา</span></li>
+            <li><i class="fas fa-comments me-2"></i> <span>แชทสอบถาม: ติดต่อผู้ขายได้โดยตรงผ่านระบบแชท</span></li>
+            <li><i class="fas fa-star me-2"></i> <span>รีวิวและให้คะแนน: สร้างความมั่นใจในการซื้อขาย</span></li>
+            <li><i class="fas fa-mobile-alt me-2"></i> <span>ดีไซน์ทันสมัย: ใช้งานง่าย รองรับมือถือและคอมพิวเตอร์</span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- เกี่ยวกับเบลล์ -->
+      <div class="col-lg-6 d-flex flex-column align-items-center">
+        <div class="about-avatar bg-white shadow" style="margin-top:-48px; z-index:2; overflow:hidden;">
+          <img src="https://scontent.fnak4-1.fna.fbcdn.net/v/t39.30808-6/471666690_1860936947973330_4945651447005674246_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=3v4mfdspufcQ7kNvwHRWXqL&_nc_oc=Adko9hMmi6LcId1e7vMZIY6Ixb_rPaXZlB1LONC6Q0LCDuJGbW8zB9AANJDjd4-vE4_G_ibz7RcEYpBoQ5U88UkV&_nc_zt=23&_nc_ht=scontent.fnak4-1.fna&_nc_gid=WlsAyHbj4S75YY8sSZj2Iw&oh=00_AfQIwe7GcVGzFdGSStgI_i8f9bjSQZ7DRJzEpW3z6eSl5g&oe=6875E930" alt="belle avatar" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="about-detail about-card-gradient-purple p-4 rounded-4 shadow-lg w-100 mt-0" style="margin-top:-36px; min-height:340px; color: #222; display: flex; flex-direction: column; justify-content: flex-start;">
+          <h2 class="about-name mb-1 text-center">เบลล์</h2>
+          <p class="about-title mb-2 text-center">นางสาวจีรนันท์ เกิดกล้า</p>
+           <ul class="about-list" style="flex:1; color:#222; background:rgba(0, 48, 110, 0.7); border-radius:12px; padding:12px 16px;">
+            <li><i class="fas fa-graduation-cap me-2"></i> <span>สาขา: วิทยาการคอมพิวเตอร์</span></li>
+            <li><i class="fas fa-university me-2"></i> <span>มหาวิทยาลัย: มหาวิทยาลัยราชภัฏศรีสะเกษ</span></li>
+            <li><i class="fas fa-gamepad me-2"></i> <span>งานอดิเรก: เล่นเกม, ฟังเพลง, ดูหนัง, เล่นแบดมินตัน</span></li>
+          </ul>
+          <div class="about-icons mt-3 d-flex justify-content-center">
+            <span title="เล่นเกม"><i class="fas fa-gamepad"></i></span>
+            <span title="ฟังเพลง"><i class="fas fa-music"></i></span>
+            <span title="ดูหนัง"><i class="fas fa-film"></i></span>
+            <span title="เล่นแบด">🏸</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+<style>
+.about-section {
+  background: linear-gradient(135deg, #f7fbff 60%, #e3eafc 100%);
+  min-height: 80vh;
+  position: relative;
+}
+.about-main-title {
+  font-size: 2.7rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg,#1976d2,#6ec1e4 60%,#b2ebf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 2.5rem;
+}
+.about-divider {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #1976d2 0%, #b39ddb 100%);
+  opacity: 0.13;
+  z-index: 1;
+  border-radius: 2px;
+}
+.about-card-gradient-blue {
+  background: linear-gradient(135deg, #1976d2 0%, #6ec1e4 100%);
+}
+.about-card-gradient-purple {
+  background: linear-gradient(135deg, #6c3483 0%, #b39ddb 100%);
+}
+.about-avatar {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 90px;
+  height: 90px;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  box-shadow: 0 4px 24px rgba(30,118,210,0.10);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.text-gradient-blue {
+  background: linear-gradient(90deg,#1976d2,#6ec1e4 60%,#b2ebf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.text-purple {
+  color: #b39ddb;
+  font-weight: 700;
+}
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.about-list li {
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+}
+.about-list i {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  opacity: 0.85;
+  min-width: 24px;
+  text-align: center;
+}
+.about-list span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+.about-icons {
+  width: 100%;
+}
+.about-icons span {
+  display: inline-block;
+  margin-right: 14px;
+  font-size: 1.6rem;
+  color: #fff;
+  background: rgba(25, 118, 210, 0.13);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.about-icons span:last-child {
+  margin-right: 0;
+}
+.about-icons span:hover {
+  background: #fff;
+  color: #1976d2;
+}
+.about-detail {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(30,118,210,0.10);
+}
+</style>
 {% endblock %}
